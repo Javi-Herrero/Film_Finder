@@ -1,0 +1,122 @@
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: bisque;
+}
+
+body {
+  background-color: #000000;
+  background-image: radial-gradient(circle, rgba(166, 165, 165, 0.4666666667) 9%, rgba(0, 0, 0, 0.137254902) 50%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: absolute;
+}
+
+a {
+  color: bisque;
+  text-decoration: none;
+}
+
+a:visited {
+  color: bisque;
+}
+
+nav {
+  background-color: #afa190;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -5%;
+  z-index: 1;
+}
+nav form {
+  display: grid;
+  justify-items: stretch;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 0.45fr;
+}
+nav form .title {
+  grid-row: 1;
+  grid-column: 1;
+  place-self: center;
+  font-size: 24px;
+}
+nav form .searchContainer {
+  grid-row: 1;
+  grid-column: 3;
+  place-self: center;
+}
+nav form .searchContainer input[type=text] {
+  width: 200px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  padding: 0;
+  transition: width 0.4s ease-in-out;
+}
+nav form .searchContainer button {
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 4px;
+}
+nav form .btnContainer {
+  grid-row: 2;
+  grid-column: 2;
+  justify-self: center;
+}
+
+#filmArea {
+  background-color: transparent;
+  display: block;
+  justify-items: stretch;
+}
+
+section {
+  margin: 5vh auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  place-items: center;
+  gap: 25px 15px;
+}
+section article {
+  height: 85%;
+  width: 85%;
+  background-color: #000000;
+  margin: 0;
+  border-radius: 3.5%;
+}
+section article img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 3.5%;
+}
+
+@media screen and (max-width: 720px) {
+  section {
+    grid-template-columns: auto;
+  }
+  nav form .btnContainer {
+    grid-row: 2;
+    grid-column: 1/4;
+  }
+  nav form .title {
+    grid-row: 1;
+    grid-column: 1/3;
+    justify-self: left;
+  }
+}
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+  section {
+    grid-template-columns: auto auto;
+  }
+  nav form .btnContainer {
+    grid-row: 2;
+    grid-column: 1/4;
+  }
+  nav form .title {
+    grid-row: 1;
+    grid-column: 1/3;
+    justify-self: left;
+  }
+}/*# sourceMappingURL=style.css.map */

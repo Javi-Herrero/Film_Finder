@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Film Filter</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+
+
+</head>
+
+<body>
+    <nav>
+        <form id="filmFilter">
+            <div class="title">
+                <h1><a href="#"> Film Finder</a> </h1>
+            </div>
+            <div class="searchContainer">
+                <input id="searchText" type="text" value="" placeholder="Type your search!"><button id="submit"
+                    type="button">Search!</button>
+            </div>
+            <div class="btnContainer"> <label for="latest">Latest Films</label>
+                <input id="latest" type="radio" name="filter">
+                <label for="avenger">Avenger Films</label>
+                <input class="fixedName" id="avenger" type="radio" name="filter" value="Avengers">
+                <label for="Xmen">X-Men Films</label>
+                <input class="fixedName" id="Xmen" type="radio" name="filter" value="X-Men">
+                <label for="princess">Princess Films</label>
+                <input class="fixedName" id="princess" type="radio" name="filter" value="Princess">
+                <label for="batman">Batman Films</label>
+                <input class="fixedName" id="batman" type="radio" name="filter" value="Batman">
+            </div>
+
+        </form>
+    </nav>
+    <section id="filmArea">
+
+
+
+
+    </section>
+    <script defer type="module" src='database.js'></script>
+    <script defer type="module" src='main.js'></script>
+</body>
+
+</html>
